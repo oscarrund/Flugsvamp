@@ -1,0 +1,250 @@
+body{
+    background-color: white;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+h3{
+    font-family: monospace;
+    font-size: 15px;
+}
+header{
+    display: flex;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#menubar,ul,li{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+#menubar, a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+    
+}
+#menubar, a:hover{
+    color: grey;
+}
+
+
+#formulär{
+    color: black;
+    font-family: monospace;
+    position: relative;
+    left: 45%;
+    display: flex; 
+    align-items: flex-start;  
+    width: 50%;
+    height: 50vh;
+    flex-direction: column;
+
+}
+#name, #email, #message{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: start;
+}
+#name, #email{
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#message{
+    height: 20%;
+    width: 57%;
+    border-radius: 5px;
+    border: 1px solid black
+}
+h2{
+    text-align: center;
+    font-family: monospace;
+
+}
+#p1{
+    text-align: center;
+    font-family: monospace;
+    
+}
+
+#skickabutton{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-family: monospace;
+    align-content: center;
+    
+}
+#lådbil{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+#porsche{
+    width: 500px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+#volvo{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+#atc{
+ width: 20%;
+}
+#atc:hover{
+    color: grey;
+}
+article {
+ height: 100vh;
+ display: flex;
+ justify-content: flex-start;
+ align-content: space-around;
+ flex-wrap: wrap;
+ flex-direction: column;
+ padding-left: 20px;
+ padding-top: 20px;
+}
+
+#uni{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    
+    
+}
+#karta{
+    
+    height: 200px;
+}
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(167, 167, 167);
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+#hitta{
+    font-family: monospace;
+    text-align: left;
+    
+    
+}
+#logga{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 180px;
+}
+#adress{
+text-align: left;
+font-family: monospace;
+font-style: italic;
+position: relative;
+left: 23%;
+}
+#reklam{
+    width: 20%;
+    height: 60vh;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    padding-left: 15px;
+    border: 2px solid #3a3030;
+    
+}
+#lista {
+    list-style-position: inside;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#volvo2{
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+#lådbil2{
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+#porsche2{
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+#salu{
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto;
+    width: 100%;
+}
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: monospace;
+
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    
+  }
+  
+  th {
+    background-color: black;
+    color: white;
+  }
+  
+  #ProduktBild1, #ProduktBild2, #ProduktBild3 {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #LaggTillKundvagn1, #LaggTillKundvagn2, #LaggTillKundvagn3  {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  #LaggTillKundvagn:hover {
+    text-decoration: underline;
+  }
+  iframe{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
