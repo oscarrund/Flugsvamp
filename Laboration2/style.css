@@ -1,0 +1,359 @@
+/*  Här ligger alla gemensamma stilar såsom menyn och layouten */
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body{
+    background-color: white;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 10% 70% 20%;
+    min-height: 100vh;
+}
+
+#logga{
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 180px;
+}
+
+h1{
+    text-align: center;
+    font-family: monospace;
+    grid-row: 1/2;  
+}
+h2{
+  text-align: center;
+  font-family: monospace;
+}
+
+h3{
+    font-family: monospace;
+    font-size: 20px;
+    grid-row:2/3;
+    text-align: center;      
+}
+
+header{
+    grid-row:1/2;
+    grid-column: 1/3;
+    height:100%;
+    display: flex;
+}
+
+main{
+    grid-row: 2/3;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 5% 75%;    
+}
+
+#menu,ul,li{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+    text-decoration: none;
+}
+
+#menu, a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+}
+
+#menu, a:hover{
+    color: grey; 
+}
+
+.DropdownContent{
+  display: none;
+  position: absolute;
+  top: 7%;
+  z-index: 1;
+  width: 100px; 
+}
+
+.DropdownContent a{
+  text-decoration: none;
+  color: black;
+  background-color: rgba(150,150,150);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: left; 
+}
+
+.dropdownLink:hover + .DropdownContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.DropdownContent:hover{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.DropdownContent a:hover{
+  background-color: grey;
+}
+
+.material-symbols-outlined{
+  color: black;  
+  
+}
+
+.material-symbols-outlined:hover{
+  color: grey;
+  cursor: pointer;
+}
+
+#p1{
+    text-align: center;
+    font-family: monospace;   
+}
+/* Startsida */
+
+.lista{
+  grid-row: 3/4;
+  padding-left: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#volvo2{
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #3a3030;
+}
+
+#lådbil2{
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #3a3030;
+}
+
+#porsche2{
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #3a3030;
+}
+
+#salu{
+  font-family: monospace;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px auto;
+  width: 100%;
+}
+
+/* Produktsida */
+
+#lådbil{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+
+#porsche{
+    width: 500px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+
+#volvo{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid #3a3030;
+}
+
+article {
+ width: 100%;
+ grid-column: 1/3;
+ display: flex;
+ justify-content: center;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    font-family: monospace;
+    table-layout: fixed;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black; 
+  }
+  
+  th {
+    background-color: black;
+    color: white;
+  }
+  
+  tr > td:first-child{
+    background-color: grey;
+    color: white;
+    
+    width: 200px;
+  }
+  tr > td:first-child{
+    width: 400px;
+  }
+ 
+  
+  #ProduktBild1, #ProduktBild2, #ProduktBild3 {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #LaggTillKundvagn1, #LaggTillKundvagn2, #LaggTillKundvagn3  {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    display: flex;
+    padding: 0.5rem;
+  }
+  
+  #LaggTillKundvagn:hover {
+    text-decoration: underline;
+  }
+
+/* Kontaktsida */
+
+  section{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form{
+    border: 1px solid silver;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 3px 3px 3px 4px rgba(200,200,200);
+    width: 25%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    height: 2rem;
+    background: none;
+    box-shadow: none;
+    font-family: monospace;
+    margin-top: 0.5rem
+  }
+
+  textarea{
+    height: auto;
+    resize: vertical;
+  }
+
+  label{
+    font-family: monospace;
+  }
+
+  button[type="submit"]{
+    -webkit-appearance: none;
+    background-color: #007BFF;
+    color: white; 
+    font-weight: bold;
+    border: none;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 0.5rem 1rem; 
+    margin-top: 1.5rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 30%;
+  }
+
+  button[type="submit"]:hover{
+    background-color: #0057b5;
+  }
+
+#skickabutton{
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  height: 50px;
+  width: 100px;
+  font-size: 15px;
+  font-family: monospace;
+  align-content: center;
+}
+
+/* Reklam */
+
+aside{
+  grid-column: 2/3;
+  grid-row:2/3;
+  border: 1px solid silver;
+  text-align: center;
+}
+
+aside>a>img {
+  width: 100%;
+  height: 150px;
+}
+
+/* Här ligger alla footer stilar */
+
+footer{
+  display: flex;
+  align-items: center; 
+  display: grid;
+  grid-column:1/3;
+  grid-row:3/4;
+  background-color: rgb(251, 251, 251);
+  width: 100%;
+  z-index: -1;
+  height: fit-content;
+}
+
+#karta{
+  height: 200px;
+}
+
+iframe{
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+.text{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 2rem;
+  left: 100%; 
+}
+
+.container{
+  display: flex;
+}

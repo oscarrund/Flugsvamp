@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Produktsida</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    </head>
+    <body>
+        <header>
+            <img id="logga" src="./bilder/logga.png" alt="logotyp">
+            <nav id="menu"><!-- Lista för Huvudmeny-->
+                <ul>
+                    <li>
+                        <a href="Startsida.html">Startsida</a>
+                    </li>
+                    <li>    
+                      <a class="dropdownLink" href="Produktsida.html">Produkter</a>
+                
+                      <div class="DropdownContent dropdown"><!--Dropdownmeny-->
+                          <a href="Produktsida.html">Volvo</a>
+                          <a href="Produktsida.html">Lådbil</a>
+                          <a href="Produktsida.html">Porsche</a>
+                      </div>
+                    </li>
+                    <li>    
+                        <a href="Kontaktsida.html">Kontakta oss</a>
+                    </li>
+                    <li>    
+                      <span class="material-symbols-outlined">shopping_cart</span><!--Symbol för varukorg-->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <table><!--Tabell för produkter-->
+              <thead>
+                <tr>
+                  <th>Produkt</th>
+                  <th>Bild</th>
+                  <th>Pris</th>
+                  <th>Beskskrivning</th>
+                  <th>Köp</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Volvo 740</td>
+                  <td><img id="ProduktBild1" src="bilder/Volvo740.jpeg" alt="Volvo 740"></td>
+                  <td>20 000kr</td>
+                  <td>En bra bil som fungerar som den ska!</td>
+                  <td><a id="LaggTillKundvagn1" href="#">Lägg till i kundvagn <span class="material-symbols-outlined">shopping_cart</span></a></td>
+                </tr>
+                <tr>
+                  <td>Lådbil</td>
+                  <td><img id="ProduktBild2" src="bilder/ladbil.jpg" alt="Lådbil"></td>
+                  <td>200 kr</td>
+                  <td>För dig som vill ha ett billigare alternativ.</td>
+                  <td><a id="LaggTillKundvagn2" href="#">Lägg till i kundvagn <span class="material-symbols-outlined">shopping_cart</span></a></td>
+                </tr>
+                <tr>
+                  <td>Porsche 992 GT3</td>
+                  <td><img id="ProduktBild3" src="bilder/Porsche.jpg" alt="Porsche 992 GT3"></td>
+                  <td>1 000 000 kr</td>
+                  <td>För dig som letar efter nått med mer drag i.</td>
+                  <td><a id="LaggTillKundvagn3" href="#"><strong>Lägg till i kundvagn</strong> <i class="material-symbols-outlined">shopping_cart</i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+    </body>
+</html>
